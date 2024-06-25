@@ -1,3 +1,5 @@
+import { Header } from "components/header";
+
 interface PostsProps {
   userId: number;
   id: number;
@@ -16,7 +18,9 @@ export default async function Home() {
   const posts: PostsProps[] = await getPosts();
 
   return (
-    <main className="max-w-4xl mx-auto my-4">
+    <main className="max-w-4xl mx-auto my-16 space-y-12">
+      <Header />
+
       <div>
         {posts && (
           <ul className="space-y-2">
