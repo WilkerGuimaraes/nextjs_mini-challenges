@@ -1,4 +1,5 @@
 import { CreateNewUser } from "@/components/create-user-form";
+import { Header } from "@/components/header";
 
 interface UserProps {
   id: string;
@@ -20,6 +21,8 @@ export default async function Home() {
 
   return (
     <main className="mx-auto flex flex-col items-center gap-4 p-8 md:items-start">
+      <Header />
+
       <CreateNewUser />
 
       <div className="w-full rounded-lg border border-zinc-300 p-6">
