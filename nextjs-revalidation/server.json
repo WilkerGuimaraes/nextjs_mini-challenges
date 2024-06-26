@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "johndoe@email.com"
+    },
+    {
+      "id": "2",
+      "name": "Jane Doe",
+      "email": "janedoe@email.com"
+    },
+    {
+      "id": "3",
+      "name": "Steve Jobs",
+      "email": "steve@email.com"
+    },
+    {
+      "id": "4",
+      "name": "Diego Stone",
+      "email": "diego@email.com"
+    },
+    {
+      "id": "5",
+      "name": "Maria Vergil",
+      "email": "maria@email.com"
+    }
+  ]
+}
