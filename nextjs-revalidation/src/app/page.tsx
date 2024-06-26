@@ -1,3 +1,5 @@
+import { CreateNewUser } from "@/components/create-user-form";
+
 interface UserProps {
   id: string;
   name: string;
@@ -18,6 +20,8 @@ export default async function Home() {
 
   return (
     <main className="mx-auto flex flex-col items-center gap-4 p-8 md:items-start">
+      <CreateNewUser />
+
       <div className="w-full rounded-lg border border-zinc-300 p-6">
         {users && (
           <ul className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
