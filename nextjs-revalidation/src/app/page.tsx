@@ -1,5 +1,5 @@
-import { CreateNewUser } from "@/components/create-user-form";
-import { Header } from "@/components/header";
+import { CreateNewUser } from "../components/create-user-form";
+import { Header } from "../components/header";
 
 interface UserProps {
   id: string;
