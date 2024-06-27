@@ -2,6 +2,7 @@
 
 import { revalidateAction } from "../actions/revalidate-actions";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Loader2 } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
@@ -13,7 +14,12 @@ const userFormSchema = z.object({
 type UserFormSchema = z.infer<typeof userFormSchema>;
 
 export function CreateNewUser() {
-  const { register, handleSubmit, reset } = useForm<UserFormSchema>({
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { isSubmitting },
+  } = useForm<UserFormSchema>({
     resolver: zodResolver(userFormSchema),
     defaultValues: {
       name: "",
@@ -22,6 +28,9 @@ export function CreateNewUser() {
   });
 
   async function createUser({ name, email }: UserFormSchema) {
+    //delay 1.5s
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+
     await fetch("http://localhost:3333/users", {
       method: "POST",
       body: JSON.stringify({ name, email }),
@@ -65,8 +74,13 @@ export function CreateNewUser() {
           <button
             type="submit"
             className="h-10 rounded-lg bg-zinc-800 px-4 font-bold text-zinc-50 hover:bg-zinc-700"
+            disabled={isSubmitting}
           >
-            Create user
+            {isSubmitting ? (
+              <Loader2 className="animate-spin" />
+            ) : (
+              "Create user"
+            )}
           </button>
         </div>
       </form>
