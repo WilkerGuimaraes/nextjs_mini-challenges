@@ -1,0 +1,364 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 28,
+      "isActive": true,
+      "hobbies": ["Reading", "Swimming", "Gaming"],
+      "address": {
+        "street": "123 Main St",
+        "city": "Springfield",
+        "postalCode": "12345"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "age": 34,
+      "isActive": false,
+      "hobbies": ["Cooking", "Hiking"],
+      "address": {
+        "street": "456 Elm St",
+        "city": "Greenville",
+        "postalCode": "67890"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "age": 22,
+      "isActive": true,
+      "hobbies": ["Dancing", "Traveling"],
+      "address": {
+        "street": "789 Oak St",
+        "city": "Riverside",
+        "postalCode": "11223"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Bob Brown",
+      "age": 45,
+      "isActive": false,
+      "hobbies": ["Fishing", "Gardening", "Painting"],
+      "address": {
+        "street": "321 Pine St",
+        "city": "Hilltown",
+        "postalCode": "33445"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Charlie Davis",
+      "age": 30,
+      "isActive": true,
+      "hobbies": ["Cycling", "Running"],
+      "address": {
+        "street": "654 Birch St",
+        "city": "Lakeside",
+        "postalCode": "55667"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Diane Evans",
+      "age": 27,
+      "isActive": true,
+      "hobbies": ["Photography", "Yoga"],
+      "address": {
+        "street": "987 Cedar St",
+        "city": "Mapleton",
+        "postalCode": "77889"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Edward Wilson",
+      "age": 38,
+      "isActive": false,
+      "hobbies": ["Cooking", "Fishing"],
+      "address": {
+        "street": "123 Maple St",
+        "city": "Rivertown",
+        "postalCode": "99001"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Fiona White",
+      "age": 26,
+      "isActive": true,
+      "hobbies": ["Writing", "Drawing"],
+      "address": {
+        "street": "456 Walnut St",
+        "city": "Sunnyvale",
+        "postalCode": "22334"
+      }
+    },
+    {
+      "id": 9,
+      "name": "George Harris",
+      "age": 32,
+      "isActive": false,
+      "hobbies": ["Running", "Swimming"],
+      "address": {
+        "street": "789 Aspen St",
+        "city": "Woodland",
+        "postalCode": "44556"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Hannah Martin",
+      "age": 29,
+      "isActive": true,
+      "hobbies": ["Cooking", "Traveling"],
+      "address": {
+        "street": "321 Cherry St",
+        "city": "Hillside",
+        "postalCode": "66778"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Ian Thompson",
+      "age": 31,
+      "isActive": true,
+      "hobbies": ["Climbing", "Running"],
+      "address": {
+        "street": "321 Maple St",
+        "city": "Evergreen",
+        "postalCode": "88901"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Jessica Turner",
+      "age": 24,
+      "isActive": false,
+      "hobbies": ["Drawing", "Hiking"],
+      "address": {
+        "street": "654 Oak St",
+        "city": "Greenfield",
+        "postalCode": "55678"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Kyle Brown",
+      "age": 37,
+      "isActive": true,
+      "hobbies": ["Golf", "Cooking"],
+      "address": {
+        "street": "123 Birch St",
+        "city": "Silverlake",
+        "postalCode": "11245"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Laura Scott",
+      "age": 33,
+      "isActive": false,
+      "hobbies": ["Reading", "Traveling"],
+      "address": {
+        "street": "456 Pine St",
+        "city": "Mountaintop",
+        "postalCode": "33456"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Michael Clark",
+      "age": 41,
+      "isActive": true,
+      "hobbies": ["Swimming", "Gaming"],
+      "address": {
+        "street": "789 Cedar St",
+        "city": "Riverstone",
+        "postalCode": "77890"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Nancy Hall",
+      "age": 29,
+      "isActive": true,
+      "hobbies": ["Yoga", "Photography"],
+      "address": {
+        "street": "321 Elm St",
+        "city": "Fairview",
+        "postalCode": "99002"
+      }
+    },
+    {
+      "id": 17,
+      "name": "Oscar King",
+      "age": 35,
+      "isActive": false,
+      "hobbies": ["Running", "Cycling"],
+      "address": {
+        "street": "654 Walnut St",
+        "city": "Seaside",
+        "postalCode": "22345"
+      }
+    },
+    {
+      "id": 18,
+      "name": "Paula Roberts",
+      "age": 26,
+      "isActive": true,
+      "hobbies": ["Drawing", "Writing"],
+      "address": {
+        "street": "987 Aspen St",
+        "city": "Hillview",
+        "postalCode": "44567"
+      }
+    },
+    {
+      "id": 19,
+      "name": "Quentin Young",
+      "age": 39,
+      "isActive": true,
+      "hobbies": ["Cooking", "Gardening"],
+      "address": {
+        "street": "123 Cherry St",
+        "city": "Clearwater",
+        "postalCode": "66789"
+      }
+    },
+    {
+      "id": 20,
+      "name": "Rachel Adams",
+      "age": 32,
+      "isActive": false,
+      "hobbies": ["Traveling", "Reading"],
+      "address": {
+        "street": "456 Main St",
+        "city": "Mapleton",
+        "postalCode": "77890"
+      }
+    },
+    {
+      "id": 21,
+      "name": "Sammy Carter",
+      "age": 40,
+      "isActive": true,
+      "hobbies": ["Fishing", "Running"],
+      "address": {
+        "street": "654 Pine St",
+        "city": "Brookville",
+        "postalCode": "99123"
+      }
+    },
+    {
+      "id": 22,
+      "name": "Tracy Baker",
+      "age": 28,
+      "isActive": false,
+      "hobbies": ["Reading", "Hiking"],
+      "address": {
+        "street": "987 Birch St",
+        "city": "Mountainview",
+        "postalCode": "22345"
+      }
+    },
+    {
+      "id": 23,
+      "name": "Uma Patel",
+      "age": 35,
+      "isActive": true,
+      "hobbies": ["Cooking", "Swimming"],
+      "address": {
+        "street": "123 Oak St",
+        "city": "Sunnydale",
+        "postalCode": "33467"
+      }
+    },
+    {
+      "id": 24,
+      "name": "Victor Ramirez",
+      "age": 27,
+      "isActive": false,
+      "hobbies": ["Gaming", "Traveling"],
+      "address": {
+        "street": "456 Cedar St",
+        "city": "Coastview",
+        "postalCode": "55678"
+      }
+    },
+    {
+      "id": 25,
+      "name": "Wendy Lee",
+      "age": 34,
+      "isActive": true,
+      "hobbies": ["Yoga", "Reading"],
+      "address": {
+        "street": "789 Maple St",
+        "city": "Woodland",
+        "postalCode": "66789"
+      }
+    },
+    {
+      "id": 26,
+      "name": "Xander Brooks",
+      "age": 31,
+      "isActive": false,
+      "hobbies": ["Fishing", "Drawing"],
+      "address": {
+        "street": "321 Cherry St",
+        "city": "Greenville",
+        "postalCode": "77890"
+      }
+    },
+    {
+      "id": 27,
+      "name": "Yara Simmons",
+      "age": 29,
+      "isActive": true,
+      "hobbies": ["Photography", "Writing"],
+      "address": {
+        "street": "654 Elm St",
+        "city": "Lakeside",
+        "postalCode": "99012"
+      }
+    },
+    {
+      "id": 28,
+      "name": "Zack Johnson",
+      "age": 36,
+      "isActive": false,
+      "hobbies": ["Cycling", "Gaming"],
+      "address": {
+        "street": "987 Pine St",
+        "city": "Clearwater",
+        "postalCode": "22356"
+      }
+    },
+    {
+      "id": 29,
+      "name": "Abby Rogers",
+      "age": 33,
+      "isActive": true,
+      "hobbies": ["Dancing", "Hiking"],
+      "address": {
+        "street": "123 Oak St",
+        "city": "Mapleton",
+        "postalCode": "33478"
+      }
+    },
+    {
+      "id": 30,
+      "name": "Bruce Wayne",
+      "age": 45,
+      "isActive": true,
+      "hobbies": ["Reading", "Cooking"],
+      "address": {
+        "street": "456 Cedar St",
+        "city": "Gotham",
+        "postalCode": "55689"
+      }
+    }
+  ]
+}
