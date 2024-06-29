@@ -1,3 +1,4 @@
+import { List, UnorderedList } from "../components/list";
 import { Header } from "../components/header";
 
 export interface Todos {
@@ -23,14 +24,17 @@ export default async function Home() {
 
       <div>
         {todos && (
-          <ul className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <UnorderedList>
             {todos.map((todo) => (
-              <li key={todo.id} className="border p-4 shadow-sm">
+              <List
+                key={todo.id}
+                backgroundColor={todo.completed ? "completed" : "incompleted"}
+              >
                 <h1 className="text-lg font-bold">User: {todo.userId}</h1>
                 <p>{todo.title}</p>
-              </li>
+              </List>
             ))}
-          </ul>
+          </UnorderedList>
         )}
       </div>
     </main>
