@@ -1,23 +1,29 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
 const filterFormSchema = z.object({
-  completed: z.boolean(),
+  completed: z.enum(["true", "false"]),
 });
 
 type FilterFormSchema = z.infer<typeof filterFormSchema>;
 
 export function FormFilter() {
-  const { register, handleSubmit } = useForm<FilterFormSchema>({
+  const router = useRouter();
+  const searchParams = useSearchParams();
+
+  const { register, handleSubmit, watch } = useForm<FilterFormSchema>({
     resolver: zodResolver(filterFormSchema),
   });
 
   function handleFilterTodos(data: FilterFormSchema) {
-    console.log(data);
+    router.push(`/?completed=${data.completed}`);
   }
+
+  const completedValue = watch("completed");
 
   return (
     <div>
@@ -30,6 +36,7 @@ export function FormFilter() {
             type="radio"
             {...register("completed")}
             value={"true"}
+            checked={completedValue === "true"}
             id="isCompleted"
           />
           <label htmlFor="isCompleted">Is completed</label>
@@ -40,6 +47,7 @@ export function FormFilter() {
             type="radio"
             {...register("completed")}
             value={"false"}
+            checked={completedValue === "false"}
             id="isInCompleted"
           />
           <label htmlFor="isInCompleted">Is incompleted</label>

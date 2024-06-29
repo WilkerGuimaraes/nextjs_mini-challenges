@@ -9,15 +9,28 @@ export interface Todos {
   completed: boolean;
 }
 
-export default async function Home() {
-  async function fetchTodos() {
-    const data = await fetch("https://jsonplaceholder.typicode.com/todos");
-    const response = data.json();
-
-    return response;
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: { [key: string]: string | string[] | undefined };
+}) {
+  async function fetchTodos(completed?: boolean) {
+    let url = "https://jsonplaceholder.typicode.com/todos";
+    if (completed !== undefined) {
+      url += `?completed=${completed}`;
+    }
+    const response = await fetch(url);
+    const data = await response.json();
+    return data;
   }
 
-  const todos: Todos[] = await fetchTodos();
+  const completed =
+    searchParams.completed === "true"
+      ? true
+      : searchParams.completed === "false"
+        ? false
+        : undefined;
+  const todos: Todos[] = await fetchTodos(completed);
 
   return (
     <main className="mx-auto my-12 max-w-5xl space-y-8 px-16">
