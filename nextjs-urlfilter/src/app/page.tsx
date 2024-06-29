@@ -1,5 +1,6 @@
 import { List, UnorderedList } from "../components/list";
 import { Header } from "../components/header";
+import { FormFilter } from "../components/form-filter";
 
 export interface Todos {
   userId: number;
@@ -21,6 +22,8 @@ export default async function Home() {
   return (
     <main className="mx-auto my-12 max-w-5xl space-y-8 px-16">
       <Header />
+
+      <FormFilter />
 
       <div>
         {todos && (
